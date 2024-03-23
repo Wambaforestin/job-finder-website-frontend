@@ -442,11 +442,11 @@ Section {
     }
 
     .category {
-        
+
         .box-container {
             grid-template-columns: repeat(auto-fit, 16);
 
-            .box{
+            .box {
                 flex-flow: column;
                 text-align: center;
 
@@ -455,7 +455,7 @@ Section {
                 }
             }
         }
-    
+
     }
 
 }
