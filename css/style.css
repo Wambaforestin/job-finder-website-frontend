@@ -53,10 +53,22 @@ body {
     background-color: var(--main-bg-color);
 }
 
+/* Main section */
+
 Section {
     padding: 2rem;
     margin: 0 auto;
     max-width: 1200px;
+}
+
+/* Main heading */
+
+.heading {
+    font-size: 3rem;
+    color: var(--dark-color);
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
 }
 
 /* header */
@@ -143,40 +155,40 @@ Section {
 
 /* home */
 .home-container {
-    background: url('../images/backgrounds/home-bg.jpeg') , rgba(0, 0, 0, 0.7) no-repeat; 
+    background: url('../images/backgrounds/home-bg.jpeg'), rgba(0, 0, 0, 0.7) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-blend-mode: color;
 
-    .home{
+    .home {
         min-height: 80vh;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        form{
+        form {
             background-color: var(--main-bg-color);
             width: 50rem;
             border-radius: 0.5rem;
             padding: 2rem;
             text-align: center;
 
-            h3{
+            h3 {
                 font-size: 2.5rem;
                 margin-bottom: 2rem;
                 color: var(--another-main-color);
                 text-transform: capitalize;
             }
 
-            p{
+            p {
                 font-size: 1.6rem;
                 color: var(--secondary-text-color);
                 text-transform: capitalize;
                 text-align: start;
                 padding-top: 1rem;
 
-                span{
+                span {
                     color: var(--third-color-for-any);
                 }
             }
@@ -188,6 +200,72 @@ Section {
                 font-size: 1.6rem;
                 border: var(--border-color);
                 border-radius: 0.5rem;
+            }
+        }
+    }
+}
+
+/* Category */
+
+.category {
+
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 2rem;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 2rem;
+
+        .box {
+            background-color: var(--main-bg-color);
+            padding: 2rem;
+            ;
+            border-radius: 0.5rem;
+            box-shadow: var(--box-shadow-color);
+            text-align: flex-start;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background-color 0.3s;
+
+            i {
+                height: 4.5rem;
+                width: 4.5rem;
+                line-height: 4.5rem;
+                font-size: 1.8rem;
+                border-radius: .5rem;
+                background-color: var(--another-color-for-hover);
+                text-align: center;
+                color: var(--main-text-color);
+            }
+
+            h3 {
+                font-size: 2rem;
+                color: var(--another-main-color);
+                margin-bottom: .4rem;
+            }
+
+            span {
+                font-size: 1.6rem;
+                color: var(--secondary-text-color);
+            }
+
+            &:hover {
+                background-color: var(--another-main-color);
+
+                h3 {
+                    color: var(--main-text-color);
+                }
+
+                span {
+                    color: var(--main-text-color);
+                }
+
+                i {
+                    background-color: var(--light-bg-color);
+                    color: var(--dark-color);
+                }
             }
         }
     }
@@ -222,16 +300,16 @@ Section {
 /* footer */
 
 .footer {
-    .grid{
+    .grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         gap: 2rem;
         justify-content: center;
         align-items: flex-start;
 
-        .box{
+        .box {
 
-            h3{
+            h3 {
                 font-size: 2rem;
                 margin-bottom: 1rem;
                 color: var(--another-main-color);
@@ -361,6 +439,23 @@ Section {
                 font-size: 2rem;
             }
         }
+    }
+
+    .category {
+        
+        .box-container {
+            grid-template-columns: repeat(auto-fit, 16);
+
+            .box{
+                flex-flow: column;
+                text-align: center;
+
+                h3 {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    
     }
 
 }
