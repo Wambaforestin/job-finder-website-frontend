@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link to favicon -->
+    <link rel="shortcut icon" href="images/icon/" type="image/x-icon">
     <!-- Link to CSS file -->
     <link rel="stylesheet" href="CSS/style.css">
     <!-- external links for remixicon -->
@@ -33,6 +34,45 @@
             <a href="#" class="btn">Post Job</a>
         </Section>
     </header>
+
+    <!-- Home -->
+
+    <div class="home-container">
+        <section class="home">
+            <form action="#" method="post">
+                <h3>find your next job</h3>
+                <p>job title <span>*</span> </p>
+                <input type="text" name="jobtitle" id="job-title" placeholder="keyword e.g. designer" required maxlength="20" class="input">
+                <p>job location <span>*</span> </p>
+                <input type="text" name="location" id="job-location" placeholder="locality, city , state or country" required maxlength="20" class="input">
+                <p>job type <span>*</span> </p>
+                <select name="jobtype" id="job-type" class="input">
+                    <option value="fulltime">Full Time</option>
+                    <option value="parttime">Part Time</option>
+                    <option value="contract">Contract</option>
+                    <option value="internship">Internship</option>
+                    <option value="temporary">Temporary</option>
+                </select>
+                <p>job category <span>*</span> </p>
+                <select name="jobcategory" id="job-category" class="input">
+                    <option value="web">Web Development</option>
+                    <option value="software">Software Development</option>
+                    <option value="design">Design</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="sales">Sales</option>
+                    <option value="customer">Customer Service</option>
+                    <option value="finance">Finance</option>
+                    <option value="hr">Human Resource</option>
+                    <option value="legal">Legal</option>
+                    <option value="health">Health</option>
+                    <option value="education">Education</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="other">Other</option>
+                </select>
+                <input type="submit" value="search" class="btn">
+            </form>
+        </section>
+    </div>
 
 
 

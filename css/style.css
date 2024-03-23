@@ -141,6 +141,58 @@ Section {
     }
 }
 
+/* home */
+.home-container {
+    background: url('../images/backgrounds/home-bg.jpeg') , rgba(0, 0, 0, 0.7) no-repeat; 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: color;
+
+    .home{
+        min-height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form{
+            background-color: var(--main-bg-color);
+            width: 50rem;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            text-align: center;
+
+            h3{
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+                color: var(--another-main-color);
+                text-transform: capitalize;
+            }
+
+            p{
+                font-size: 1.6rem;
+                color: var(--secondary-text-color);
+                text-transform: capitalize;
+                text-align: start;
+                padding-top: 1rem;
+
+                span{
+                    color: var(--third-color-for-any);
+                }
+            }
+
+            .input {
+                width: 100%;
+                padding: 1rem;
+                margin: 1rem 0;
+                font-size: 1.6rem;
+                border: var(--border-color);
+                border-radius: 0.5rem;
+            }
+        }
+    }
+}
+
 
 
 
