@@ -72,6 +72,17 @@ Section {
     text-transform: capitalize;
 }
 
+.section-title {
+    font-size: 6rem;
+    border-top: 1rem solid var(--another-main-color);
+    border-bottom: 1rem solid var(--another-main-color);
+    background-color: var(--secondary-text-color);
+    color: var(--light-bg-color);
+    text-align: center;
+    padding: 6rem 2rem;
+    text-transform: capitalize;
+}
+
 /* header */
 
 #menu-btn {
@@ -337,13 +348,13 @@ Section {
                 text-overflow: ellipsis;
             }
 
-            .tags{
+            .tags {
                 display: flex;
                 gap: 1rem;
                 flex-wrap: wrap;
                 margin: 1rem 0;
 
-                p{
+                p {
                     padding: 1rem 2rem;
                     background-color: var(--second-filtter-color);
                     color: var(--another-main-color);
@@ -351,54 +362,54 @@ Section {
                     border: 1px solid var(--second-filtter-color);
                     font-size: 1.6rem;
 
-                    &:hover{
+                    &:hover {
                         background-color: var(--another-main-color);
                         color: var(--main-text-color);
                         border: 1px solid var(--another-main-color);
                     }
 
-                    &:first-child{
+                    &:first-child {
                         margin-left: 0;
                     }
 
-                    i{
+                    i {
                         margin-right: .5rem;
                     }
 
                 }
             }
 
-            .location{
-               padding: 1rem 0;
-               font-size: 1.6rem;
-               color: var(--secondary-text-color);
+            .location {
+                padding: 1rem 0;
+                font-size: 1.6rem;
+                color: var(--secondary-text-color);
 
-                i{
-                     margin-right: .5rem;
-                     color: var(--another-main-color);
+                i {
+                    margin-right: .5rem;
+                    color: var(--another-main-color);
                 }
             }
 
-            .ri-bookmark-line{
+            .ri-bookmark-line {
                 font-size: 2.5rem;
                 color: var(--another-main-color);
                 cursor: pointer;
                 transition: color 0.3s;
                 background-color: var(--main-bg-color);
 
-                &:hover{
+                &:hover {
                     color: var(--third-color-for-any);
                 }
             }
 
-            .ri-share-forward-line{
+            .ri-share-forward-line {
                 font-size: 2.5rem;
                 color: var(--another-main-color);
                 cursor: pointer;
                 transition: color 0.3s;
                 background-color: var(--main-bg-color);
 
-                &:hover{
+                &:hover {
                     color: var(--third-color-for-any);
                 }
             }
@@ -406,7 +417,38 @@ Section {
     }
 }
 
+/* about  */
 
+.about {
+    img {
+        width: 100%;
+        border-radius: .5rem;
+    }
+
+    .box {
+        background-color: var(--main-bg-color);
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow-color);
+        padding: 3rem 1.5rem;
+
+        h3 {
+            font-size: 2.5rem;
+            color: var(--another-main-color);
+            margin-bottom: 1rem;
+            text-transform: capitalize;
+        }
+
+        p {
+            padding: 1rem 0;
+            font-size: 1.6rem;
+            color: var(--secondary-text-color);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+
+    }
+}
 
 
 
@@ -510,8 +552,12 @@ Section {
         font-size: 55%;
     }
 
-}
+    .section-title {
+        font-size: 4rem;
+        padding: 4rem 2rem;
+    }
 
+}
 @media screen and (max-width: 768px) {
 
     html {
@@ -596,6 +642,10 @@ Section {
 
     html {
         font-size: 50%;
+    }
+
+    .section-title {
+        font-size: 3rem;
     }
 
 }
