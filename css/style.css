@@ -450,9 +450,81 @@ Section {
     }
 }
 
+/* reveiws */
 
+.reviews {
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 35rem);
+        gap: 2rem;
+        align-items: flex-start;
+        justify-content: center;
 
+        .box{
+            background-color: var(--main-bg-color);
+            padding: 2rem;
+            border-radius: .5rem;
+            box-shadow: var(--box-shadow-color);
+            border: var(--border-color);
 
+            .stars{
+                display: flex;
+                gap: .5rem;
+                margin-bottom: 1.5rem;
+
+                i{
+                    color: var(--another-main-color);
+                    font-size: 1.8rem;
+                }
+            }
+            .title{
+                font-size: 2rem;
+                color: var(--another-main-color);
+                margin-bottom: 1rem;
+                text-transform: capitalize;
+                text-align: right;
+            }
+
+            p{
+                font-size: 1.6rem;
+                color: var(--secondary-text-color);
+                line-height: 1.8;
+                text-align: right;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+            }
+
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin-top: 1.5rem;
+
+                img{
+                    height: 6rem;
+                    width: 6rem;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                h3{
+                    font-size: 1.8rem;
+                    color: var(--another-main-color);
+                    text-transform: capitalize;
+                }
+
+                span{
+                    font-size: 1.4rem;
+                    color: var(--secondary-text-color);
+                }
+            }
+
+        }
+    }
+}
 
 
 
