@@ -2,7 +2,7 @@
 
 Simple Job Finder is a website that helps users find remote and onsite jobs from any company.
 
-![Simple Job Finder](/images/screenshots/#)
+![Simple Job Finder](/images/screenshots/screenshot1.jpg)
 
 ## Features
 
