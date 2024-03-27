@@ -7,6 +7,7 @@
     --main-text-color: #fff;
     --dark-color: #000017;
     --secondary-text-color: #333;
+    --second-filtter-color: #dfdfdf;
     --another-main-color: #004e98;
     --another-color-for-hover: #3a6ea5;
     --box-shadow-color: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -78,6 +79,14 @@ Section {
     display: none;
     cursor: pointer;
     color: var(--dark-color);
+}
+
+.flex-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 /* Main btn */
@@ -155,7 +164,7 @@ Section {
 
 /* home */
 .home-container {
-    background: url('../images/backgrounds/home-bg.jpeg'), rgba(0, 0, 0, 0.7) no-repeat;
+    background: url('../images/backgrounds/home-bg4.jpeg'), rgba(0, 0, 0, 0.7) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -271,10 +280,131 @@ Section {
     }
 }
 
+/* Jobs */
 
+.jobs-container {
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 35rem);
+        gap: 2rem;
+        justify-content: center;
+        align-items: flex-start;
 
+        .box {
+            background-color: var(--main-bg-color);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            border: var(--border-color);
+            box-shadow: var(--box-shadow-color);
+            overflow-x: hidden;
 
+            .company {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                margin-bottom: 1.5rem;
 
+                img {
+                    height: 8rem;
+                    width: 8rem;
+                    border-radius: 50%;
+                    object-fit: contain;
+                    margin-right: 1rem;
+                }
+
+                h3 {
+                    font-size: 2rem;
+                    color: var(--another-main-color);
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow-x: hidden;
+                    text-transform: capitalize;
+                    padding-bottom: .5rem;
+                }
+
+                span {
+                    font-size: 1.2rem;
+                    color: var(--secondary-text-color);
+                }
+
+            }
+
+            .job-title {
+                font-size: 2rem;
+                color: var(--another-main-color);
+                text-transform: capitalize;
+                overflow-x: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .tags{
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+                margin: 1rem 0;
+
+                p{
+                    padding: 1rem 2rem;
+                    background-color: var(--second-filtter-color);
+                    color: var(--another-main-color);
+                    border-radius: 1rem;
+                    border: 1px solid var(--second-filtter-color);
+                    font-size: 1.6rem;
+
+                    &:hover{
+                        background-color: var(--another-main-color);
+                        color: var(--main-text-color);
+                        border: 1px solid var(--another-main-color);
+                    }
+
+                    &:first-child{
+                        margin-left: 0;
+                    }
+
+                    i{
+                        margin-right: .5rem;
+                    }
+
+                }
+            }
+
+            .location{
+               padding: 1rem 0;
+               font-size: 1.6rem;
+               color: var(--secondary-text-color);
+
+                i{
+                     margin-right: .5rem;
+                     color: var(--another-main-color);
+                }
+            }
+
+            .ri-bookmark-line{
+                font-size: 2.5rem;
+                color: var(--another-main-color);
+                cursor: pointer;
+                transition: color 0.3s;
+                background-color: var(--main-bg-color);
+
+                &:hover{
+                    color: var(--third-color-for-any);
+                }
+            }
+
+            .ri-share-forward-line{
+                font-size: 2.5rem;
+                color: var(--another-main-color);
+                cursor: pointer;
+                transition: color 0.3s;
+                background-color: var(--main-bg-color);
+
+                &:hover{
+                    color: var(--third-color-for-any);
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -300,6 +430,8 @@ Section {
 /* footer */
 
 .footer {
+    background-color: var(--light-bg-color);
+
     .grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
