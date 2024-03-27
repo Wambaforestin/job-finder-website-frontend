@@ -415,8 +415,29 @@ Section {
             }
         }
     }
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+    
+        a {
+            padding: 1rem 2rem;
+            font-size: 1.6rem;
+            color: var(--another-main-color);
+            background-color: var(--main-bg-color);
+            border-radius: 0.5rem;
+            border: var(--border-color);
+            transition: background-color 0.3s;
+    
+            &:hover {
+                background-color: var(--another-main-color);
+                color: var(--main-text-color);
+            }
+        }
+    }
 }
-
 /* about  */
 
 .about {
