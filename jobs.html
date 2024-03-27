@@ -13,7 +13,7 @@
     <!-- Link to nice  Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
     <title>
-        All Jobs 
+        All Jobs
     </title>
 </head>
 
@@ -36,6 +36,102 @@
             <a href="#" class="btn">Post Job</a>
         </Section>
     </header>
+
+    <!-- filter jobs -->
+
+    <section class="job-filter">
+        <h1 class="heading">
+            Filter Jobs
+        </h1>
+        <form action="#" method="post">
+            <div class="flex">
+                <div class="box">
+                    <p>job title <span>*</span></p>
+                    <input type="text" name="jobtitle" id="job-title" placeholder="keyword e.g. designer" required
+                        maxlength="20" class="input">
+                </div>
+                <div class="box">
+                    <p>location <span>*</span></p>
+                    <input type="text" name="location" id="location" placeholder="location e.g. Paris" required
+                        maxlength="20" class="input">
+                </div>
+            </div>
+            <div class="drop-down-container">
+                <div class="drop-down">
+                    <input type="text" readonly placeholder="date posted" name="name" class="output" maxlength="20">
+                    <div class="list">
+                        <p class="option">Today</p>
+                        <p class="option">Yesterday</p>
+                        <p class="option">Last 3 days</p>
+                        <p class="option">Last 7 days</p>
+                        <p class="option">Last 14 days</p>
+                        <p class="option">Last 30 days</p>
+                        <p class="option">Last 45 days 😅</p>
+                        <p class="option">Last 90 days 😂</p>
+                    </div>
+                </div>
+                <div class="drop-down">
+                    <input type="text" readonly placeholder="job type" name="name" class="output" maxlength="20">
+                    <div class="list">
+                        <p class="option">Full Time</p>
+                        <p class="option">Part Time</p>
+                        <p class="option">Internship</p>
+                        <p class="option">Contract</p>
+                        <p class="option">Temporary</p>
+                        <p class="option">Commission</p>
+                        <p class="option">Volunteer</p>
+                        <p class="option">Apprenticeship</p>
+                    </div>
+                </div>
+                <div class="drop-down">
+                    <input type="text" readonly placeholder="Salary Preference" name="name" class="output" maxlength="20">
+                    <div class="list">
+                        <p class="option">8 - 10k</p>
+                        <p class="option">8 - 12k</p>
+                        <p class="option">10 - 15k</p>
+                        <p class="option">15 - 20k</p>
+                        <p class="option">20 - 25k</p>
+                        <p class="option">25 - 30k</p>
+                        <p class="option">30 - 35k</p>
+                        <p class="option">35 - 40k</p>
+                        <p class="option">40 - 45k</p>
+                        <p class="option">45 - 50k</p>
+                        <p class="option">50 - 55k</p>
+                        <p class="option">55 - 60k</p>
+                        <p class="option">60 - 65k</p>
+                        <p class="option">65 - 70k</p>
+                        <p class="option">70 - 75k</p>
+                    </div>
+                </div>
+                <div class="drop-down">
+                    <input type="text" readonly placeholder="Education Level" name="name" class="output" maxlength="20">  
+                    <div class="list">
+                        <p class="option">High School</p>
+                        <p class="option">Diploma</p>
+                        <p class="option">Bachelor's Degree</p>
+                        <p class="option">Master's Degree</p>
+                        <p class="option">Doctorate</p>
+                        <p class="option">Professional Degree</p>
+                        <p class="option">Vocational</p>
+                        <p class="option">Other</p>
+                </div>
+            </div>
+            <div class="drop-down">
+                <input type="text" readonly placeholder="Work Shift" name="name" class="output" maxlength="20">
+                <div class="list">
+                    <p class="option">Morning</p>
+                    <p class="option">Afternoon</p>
+                    <p class="option">Evening</p>
+                    <p class="option">Night</p>
+                    <p class="option">Rotating</p>
+                    <p class="option">Split</p>
+                    <p class="option">On Call</p>
+                    <p class="option">Flexible</p>
+            </div>
+        </div>
+            <button type="submit" class="btn">Filter</button>
+        </form>
+    </section>
 
     <!-- view jobs -->
     <Section class="jobs-container">
@@ -66,10 +162,10 @@
                 </div>
                 <div class="flex-btn">
                     <a href="view_job.html" class="btn">view details</a>
-                   <div class="save-share-btn">
-                    <button type="submit" class="ri-bookmark-line" name="save"></button>
-                    <button type="submit" class="ri-share-forward-line" name="share"></button>
-                   </div>
+                    <div class="save-share-btn">
+                        <button type="submit" class="ri-bookmark-line" name="save"></button>
+                        <button type="submit" class="ri-share-forward-line" name="share"></button>
+                    </div>
                 </div>
             </div>
             <div class="box">
@@ -97,10 +193,10 @@
                 </div>
                 <div class="flex-btn">
                     <a href="view_job.html" class="btn">view details</a>
-                   <div class="save-share-btn">
-                    <button type="submit" class="ri-bookmark-line" name="save"></button>
-                    <button type="submit" class="ri-share-forward-line" name="share"></button>
-                   </div>
+                    <div class="save-share-btn">
+                        <button type="submit" class="ri-bookmark-line" name="save"></button>
+                        <button type="submit" class="ri-share-forward-line" name="share"></button>
+                    </div>
                 </div>
             </div>
             <div class="box">
@@ -128,10 +224,10 @@
                 </div>
                 <div class="flex-btn">
                     <a href="view_job.html" class="btn">view details</a>
-                   <div class="save-share-btn">
-                    <button type="submit" class="ri-bookmark-line" name="save"></button>
-                    <button type="submit" class="ri-share-forward-line" name="share"></button>
-                   </div>
+                    <div class="save-share-btn">
+                        <button type="submit" class="ri-bookmark-line" name="save"></button>
+                        <button type="submit" class="ri-share-forward-line" name="share"></button>
+                    </div>
                 </div>
             </div>
             <div class="box">
@@ -159,10 +255,10 @@
                 </div>
                 <div class="flex-btn">
                     <a href="view_job.html" class="btn">view details</a>
-                   <div class="save-share-btn">
-                    <button type="submit" class="ri-bookmark-line" name="save"></button>
-                    <button type="submit" class="ri-share-forward-line" name="share"></button>
-                   </div>
+                    <div class="save-share-btn">
+                        <button type="submit" class="ri-bookmark-line" name="save"></button>
+                        <button type="submit" class="ri-share-forward-line" name="share"></button>
+                    </div>
                 </div>
             </div>
             <div class="box">
@@ -190,10 +286,10 @@
                 </div>
                 <div class="flex-btn">
                     <a href="view_job.html" class="btn">view details</a>
-                   <div class="save-share-btn">
-                    <button type="submit" class="ri-bookmark-line" name="save"></button>
-                    <button type="submit" class="ri-share-forward-line" name="share"></button>
-                   </div>
+                    <div class="save-share-btn">
+                        <button type="submit" class="ri-bookmark-line" name="save"></button>
+                        <button type="submit" class="ri-share-forward-line" name="share"></button>
+                    </div>
                 </div>
             </div>
             <div class="box">
@@ -221,10 +317,10 @@
                 </div>
                 <div class="flex-btn">
                     <a href="view_job.html" class="btn">view details</a>
-                   <div class="save-share-btn">
-                    <button type="submit" class="ri-bookmark-line" name="save"></button>
-                    <button type="submit" class="ri-share-forward-line" name="share"></button>
-                   </div>
+                    <div class="save-share-btn">
+                        <button type="submit" class="ri-bookmark-line" name="save"></button>
+                        <button type="submit" class="ri-share-forward-line" name="share"></button>
+                    </div>
                 </div>
             </div>
             <div class="box">
@@ -252,10 +348,10 @@
                 </div>
                 <div class="flex-btn">
                     <a href="view_job.html" class="btn">view details</a>
-                   <div class="save-share-btn">
-                    <button type="submit" class="ri-bookmark-line" name="save"></button>
-                    <button type="submit" class="ri-share-forward-line" name="share"></button>
-                   </div>
+                    <div class="save-share-btn">
+                        <button type="submit" class="ri-bookmark-line" name="save"></button>
+                        <button type="submit" class="ri-share-forward-line" name="share"></button>
+                    </div>
                 </div>
             </div>
             <div class="box">
@@ -283,10 +379,10 @@
                 </div>
                 <div class="flex-btn">
                     <a href="view_job.html" class="btn">view details</a>
-                   <div class="save-share-btn">
-                    <button type="submit" class="ri-bookmark-line" name="save"></button>
-                    <button type="submit" class="ri-share-forward-line" name="share"></button>
-                   </div>
+                    <div class="save-share-btn">
+                        <button type="submit" class="ri-bookmark-line" name="save"></button>
+                        <button type="submit" class="ri-share-forward-line" name="share"></button>
+                    </div>
                 </div>
             </div>
             <div class="box">
@@ -320,7 +416,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="box">
                 <div class="company">
                     <img src="images/jobImage/L'oreal.png" alt="">
@@ -346,10 +442,10 @@
                 </div>
                 <div class="flex-btn">
                     <a href="view_job.html" class="btn">view details</a>
-                   <div class="save-share-btn">
-                    <button type="submit" class="ri-bookmark-line" name="save"></button>
-                    <button type="submit" class="ri-share-forward-line" name="share"></button>
-                   </div>
+                    <div class="save-share-btn">
+                        <button type="submit" class="ri-bookmark-line" name="save"></button>
+                        <button type="submit" class="ri-share-forward-line" name="share"></button>
+                    </div>
                 </div>
             </div>
             <div class="box">
@@ -408,10 +504,10 @@
                 </div>
                 <div class="flex-btn">
                     <a href="view_job.html" class="btn">view details</a>
-                   <div class="save-share-btn">
-                    <button type="submit" class="ri-bookmark-line" name="save"></button>
-                    <button type="submit" class="ri-share-forward-line" name="share"></button>
-                   </div>
+                    <div class="save-share-btn">
+                        <button type="submit" class="ri-bookmark-line" name="save"></button>
+                        <button type="submit" class="ri-share-forward-line" name="share"></button>
+                    </div>
                 </div>
             </div>
             <div class="box">
@@ -439,10 +535,10 @@
                 </div>
                 <div class="flex-btn">
                     <a href="view_job.html" class="btn">view details</a>
-                   <div class="save-share-btn">
-                    <button type="submit" class="ri-bookmark-line" name="save"></button>
-                    <button type="submit" class="ri-share-forward-line" name="share"></button>
-                   </div>
+                    <div class="save-share-btn">
+                        <button type="submit" class="ri-bookmark-line" name="save"></button>
+                        <button type="submit" class="ri-share-forward-line" name="share"></button>
+                    </div>
                 </div>
             </div>
             <div class="box">
@@ -470,10 +566,10 @@
                 </div>
                 <div class="flex-btn">
                     <a href="view_job.html" class="btn">view details</a>
-                   <div class="save-share-btn">
-                    <button type="submit" class="ri-bookmark-line" name="save"></button>
-                    <button type="submit" class="ri-share-forward-line" name="share"></button>
-                   </div>
+                    <div class="save-share-btn">
+                        <button type="submit" class="ri-bookmark-line" name="save"></button>
+                        <button type="submit" class="ri-share-forward-line" name="share"></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -536,6 +632,34 @@
 
 
     <script src="JS/script.js"></script>
+
+    <script>
+
+        const dropDown = document.querySelectorAll('.drop-down');
+        const output = document.querySelectorAll('.output');
+
+        dropDown.forEach((drop, index) => {
+            drop.addEventListener('click', () => {
+                drop.lastElementChild.classList.toggle('active');
+            });
+        });
+
+        output.forEach((out, index) => {
+            out.addEventListener('click', () => {
+                out.nextElementSibling.classList.toggle('active');
+            });
+        });
+
+        const options = document.querySelectorAll('.option');
+
+        options.forEach((option, index) => {
+            option.addEventListener('click', () => {
+                option.parentElement.previousElementSibling.value = option.textContent;
+                option.parentElement.classList.remove('active');
+            });
+        });
+
+    </script>
 </body>
 
 </html>
