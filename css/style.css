@@ -126,10 +126,10 @@ Section {
             font-size: 2.5rem;
             font-weight: 700;
             cursor: pointer;
+            color: var(--another-main-color);
 
             i {
-                margin-right: 0.5rem;
-                color: var(--another-main-color);
+                color: var(--third-color-for-any);
             }
 
             span {
