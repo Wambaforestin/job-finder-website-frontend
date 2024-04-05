@@ -37,21 +37,69 @@
         </Section>
     </header>
 
+    <!-- contact us -->
+    <div class="section-title">
+        Contact Us
+    </div>
+    <section class="contact">
+        <div class="box-container">
+            <div class="box">
+                <i class="ri-map-pin-line"></i>
+                <a href="#">
+                    55 Rue de Faubourg Saint-Honore, 75008 Paris, France
+                </a>
+            </div>
+            <div class="box">
+                <i class="ri-phone-line"></i>
+                <a href="tel:+33123456789">
+                    +33 1 23 45 67 89
+                </a>
+            </div>
+            <div class="box">
+                <i class="ri-mail-line"></i>
+                <a href="mailto:#">
+                    job.finder@france.fr
+                </a>
+            </div>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <form action="#" method="post">
+            <h3>
+                Send us a message
+            </h3>
+            <div class="flex">
+                <div class="box">
+                    <p>name <span>*</span></p>
+                    <input type="text" placeholder="Enter your name" maxlength="20" name="name" class="input" required>
+                </div>
+                <div class="box">
+                    <p>email <span>*</span></p>
+                    <input type="email" placeholder="Enter your email" name="email" maxlength="50" class="input"
+                        required>
+                </div>
+                <div class="box">
+                    <p>phone number <span>*</span></p>
+                    <input type="tel" placeholder="Enter your phone number" name="phone" class="input" required>
+                </div>
+                <div class="box">
+                    <p>role <span>*</span></p>
+                    <select name="role" class="input" required>
+                        <option value="job seeker">Job Seeker</option>
+                        <option value="employer">Employer</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>message <span>*</span></p>
+                    <textarea name="message" placeholder="Enter your message....✍️" class="input" cols="30" rows="10"
+                        maxlength="1000"></textarea>
+                </div>
+            </div>
+            <!--Animated submit button-->
+            <button id="btn" class="submit">
+                Send Message
+              </button>
+    </section>
 
     <!-- footer -->
     <footer class="footer">
