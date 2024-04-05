@@ -699,6 +699,70 @@ Section {
     }
 }
 
+/* view company */
+
+.view-company{
+    .details{
+        background-color: var(--main-bg-color);
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: var(--box-shadow-color);
+        border: var(--border-color);
+        overflow-x: hidden;
+
+        .company-info{
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+
+            img{
+                height: 10rem;
+                width: 10rem;
+                border-radius: 50%;
+                object-fit: contain;
+                margin-right: 1rem;
+            }
+
+            h3{
+                font-size: 2rem;
+                color: var(--another-main-color);
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow-x: hidden;
+                text-transform: capitalize;
+                padding-bottom: .5rem;
+            }
+        
+        }
+
+        .description {
+            p{
+                font-size: 1.6rem;
+                color: var(--secondary-text-color);
+                line-height: 1.8;
+            }
+
+            h3{
+                font-size: 2rem;
+                color: var(--another-main-color);
+                margin-bottom: 1rem;
+                text-transform: capitalize;
+            }
+        }
+
+        ul{
+            li{
+                margin-left: 3rem;
+                padding-top: 1.5rem;
+                font-size: 1.6rem;
+                color: var(--secondary-text-color);
+                line-height: 1.8;
+            }
+        }
+    }
+}
+
 /* about  */
 .about {
     img {
