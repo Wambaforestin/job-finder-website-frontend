@@ -13,10 +13,10 @@ window.onscroll = () => {
 //The code below is for the input number to not exceed the max length of the input
 
 document.querySelectorAll('input[type="number"]').forEach((input) => {
-    inputNumber.ouinput = () => {
-        if (inputNumber.value.length > inputNumber.maxLength) {
-            inputNumber.value = inputNumber.value.slice(0, inputNumber.maxLength);
-        };
+    input.oninput = () => {
+        if (input.value.length > input.maxLength) {
+            input.value = input.value.slice(0, input.maxLength);
+        }
     }
 });
 
