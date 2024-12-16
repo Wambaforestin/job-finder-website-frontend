@@ -32,4 +32,4 @@ Before running the frontend website, make sure you have the following prerequisi
     cd simple-job-finder-frontend
     ```
 
-## note: The same website will be created using Angular and database to make it useful. Stay connected
+## note: The same website will be created using Vue.js and flask to make it useful. Stay connected😉
